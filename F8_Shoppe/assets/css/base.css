@@ -1,17 +1,33 @@
 :root {
-    --with-color: #ffffffff;
+    --white-color: #ffffffff;
     --blackblack-color: #000000;
     --text-color: #33333333;
 }
-*{
-    box-sizing: inherit ;
+
+* {
+    box-sizing: inherit;
 }
+
 html {
     /* Hack tức là chia ra 62.5 là một 1rem = 10px */
     font-size: 62.5%;
     line-height: 1.6rem;
     font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid__full-with {
+    width: 100%;
+}
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
 }
 p {
-    font-size: 1rem;  
+    font-size: 1rem;
 }
